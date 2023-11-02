@@ -1,0 +1,21 @@
+{
+  "name": "tailwind-ink",
+  "module": "index.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "tshy"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "ink": "^4.4.1",
+    "tshy": "^1.7.0"
+  }
+}
