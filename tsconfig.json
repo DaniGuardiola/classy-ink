@@ -5,8 +5,6 @@
     "target": "esnext",
     "moduleResolution": "NodeNext",
     "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
     "composite": true,
     "strict": true,
     "downlevelIteration": true,

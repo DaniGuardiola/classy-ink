@@ -1,6 +1,6 @@
 {
   "name": "tailwind-ink",
-  "module": "index.ts",
+  "version": "0.0.1-alpha-0",
   "type": "module",
   "files": [
     "dist"
@@ -17,5 +17,23 @@
   "dependencies": {
     "ink": "^4.4.1",
     "tshy": "^1.7.0"
+  },
+  "tshy": {
+    "dialects": [
+      "esm"
+    ],
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/index.ts"
+    }
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      }
+    }
   }
 }
