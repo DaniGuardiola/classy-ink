@@ -1,14 +1,23 @@
 {
   "name": "tailwind-ink",
-  "version": "0.0.1-alpha-0",
+  "description": "Build beautiful CLI interfaces with utility classes and Ink",
+  "version": "0.0.1",
+  "author": {
+    "email": "hi@daniguardio.la",
+    "name": "Dani Guardiola",
+    "url": "https://dio.la/"
+  },
+  "license": "MIT",
   "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
-    "prepare": "tshy"
+    "prepare": "tshy",
+    "publish": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "bun-types": "latest"
   },
   "peerDependencies": {

@@ -1,6 +1,6 @@
 # Tailwind Ink
 
-Build beautiful CLI interfaces with [Tailwind CSS](https://tailwindcss.com) and [Ink](https://term.ink/).
+Build beautiful CLI interfaces with [Tailwind CSS](https://tailwindcss.com)-inspired utility classes and [Ink](https://term.ink/).
 
 ```
 npm install tailwind-ink
