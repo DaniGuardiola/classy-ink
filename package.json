@@ -1,7 +1,7 @@
 {
   "name": "tailwind-ink",
   "description": "Build beautiful CLI interfaces with utility classes and Ink",
-  "version": "0.0.1-alpha-6",
+  "version": "1.0.0",
   "author": {
     "email": "hi@daniguardio.la",
     "name": "Dani Guardiola",
