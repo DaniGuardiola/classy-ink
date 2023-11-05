@@ -93,6 +93,9 @@ export function numericUtility(
     values?: DynamicUtilityValues;
   } = {},
 ): DynamicUtility {
+  const valuesWithDefault = { ...values };
+  if (options.defaultValue)
+    valuesWithDefault.DEFAULT = String(options.defaultValue);
   return [
     (value) => {
       const transformer = numericTransformer(property, options);
@@ -109,7 +112,7 @@ export function numericUtility(
         return `${key}: ${value}`;
       }
     },
-    values,
+    valuesWithDefault,
   ];
 }
 
