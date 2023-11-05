@@ -1,4 +1,4 @@
-import { UtilityTransformerMap } from "../shared.js";
+import { type UtilityTransformerMap } from "../shared.js";
 import { BASE_TRANSFORMER_MAP } from "./base.js";
 import { BORDER_TRANSFORMER_MAP } from "./border.js";
 import { FLEX_TRANSFORMER_MAP } from "./flex.js";

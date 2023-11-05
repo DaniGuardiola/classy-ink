@@ -5,7 +5,7 @@ import {
   TEXT_WHITESPACE_VALUES,
 } from "../data/index.js";
 import { kebabCaseToCamelCase } from "../shared.js";
-import { Utilities, combinations, colorHighlight } from "./shared.js";
+import { colorHighlight,combinations, type Utilities } from "./shared.js";
 
 export const TEXT_UTILITIES: Utilities = {
   // wrapping

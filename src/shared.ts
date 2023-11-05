@@ -1,8 +1,9 @@
-import { BoxProps, TextProps } from "ink";
+import { type BoxProps, type TextProps } from "ink";
+
 import {
-  SpatialValueOutput,
   SPATIAL_VALUES,
   SPATIAL_VALUES_MAP,
+  type SpatialValueOutput,
 } from "./data/index.js";
 
 // types

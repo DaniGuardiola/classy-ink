@@ -1,18 +1,18 @@
 import {
-  UtilityTransformerMap,
-  parseFragment,
-  numericTransformer,
-  percentageFallback,
-  spatialTransformers,
-  isFragment,
-} from "../shared.js";
-import {
-  OVERFLOW_DIMENTIONS_MAP,
-  SIZE_DIMENTIONS_MAP,
   isOverflowDimention,
   isOverflowValue,
   isSizeDimention,
+  OVERFLOW_DIMENTIONS_MAP,
+  SIZE_DIMENTIONS_MAP,
 } from "../data/index.js";
+import {
+  isFragment,
+  numericTransformer,
+  parseFragment,
+  percentageFallback,
+  spatialTransformers,
+  type UtilityTransformerMap,
+} from "../shared.js";
 
 export const BASE_TRANSFORMER_MAP: UtilityTransformerMap = {
   // display

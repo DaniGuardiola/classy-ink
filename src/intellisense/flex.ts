@@ -1,19 +1,19 @@
 import {
-  FLEX_DIRECTION_VALUES,
-  FLEX_DIRECTION_MAP,
-  FLEX_WRAP_VALUES,
-  ALIGN_ITEMS_VALUES,
   ALIGN_ITEMS_MAP,
+  ALIGN_ITEMS_VALUES,
   ALIGN_SELF_MAP,
   ALIGN_SELF_VALUES,
-  JUSTIFY_CONTENT_VALUES,
+  FLEX_DIRECTION_MAP,
+  FLEX_DIRECTION_VALUES,
+  FLEX_WRAP_VALUES,
   JUSTIFY_CONTENT_MAP,
+  JUSTIFY_CONTENT_VALUES,
 } from "../data/index.js";
 import {
-  SMALL_NUMERIC_VALUES,
-  Utilities,
   combinations,
   numericUtility,
+  SMALL_NUMERIC_VALUES,
+  type Utilities,
 } from "./shared.js";
 
 export const FLEX_UTILITIES: Utilities = {

@@ -1,7 +1,8 @@
-import { ReactNode, useMemo } from "react";
-import { TailwindInkContext } from "./context.js";
+import { type ReactNode, useMemo } from "react";
+
 import { createLruCache } from "../lib/create-lru-cache.js";
-import { Props } from "../shared.js";
+import { type Props } from "../shared.js";
+import { TailwindInkContext } from "./context.js";
 
 const DEFAULT_MAX_CACHE_SIZE = 500;
 
