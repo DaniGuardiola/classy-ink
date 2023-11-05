@@ -1,0 +1,82 @@
+{
+  "name": "tailwind-ink",
+  "description": "Build beautiful CLI interfaces with utility classes and Ink",
+  "version": "0.0.1-alpha-6",
+  "author": {
+    "email": "hi@daniguardio.la",
+    "name": "Dani Guardiola",
+    "url": "https://dio.la/"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "zx build.zx.js",
+    "publish": "changeset publish",
+    "demo:bun": "bun src/demo/index.tsx",
+    "demo:watch:bun": "bun --watch src/demo/index.tsx",
+    "demo": "tsx src/demo/index.tsx",
+    "demo:watch": "tsx --watch src/demo/index.tsx"
+  },
+  "dependencies": {
+    "ink": ">=4.0.0",
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@types/react": "^18.2.34",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "bun-types": "latest",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwindcss": "^3.3.5",
+    "tshy": "^1.7.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.0.0",
+    "zx": "^7.2.3"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "tailwindcss": {
+      "optional": true
+    }
+  },
+  "bin": {
+    "tailwind-ink": "dist/esm/demo/index.js"
+  },
+  "tshy": {
+    "dialects": [
+      "esm"
+    ],
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/index.ts",
+      "./intellisense": "./src/intellisense/index.ts"
+    }
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      }
+    },
+    "./intellisense": [
+      {
+        "import": {
+          "types": "./dist/esm/intellisense/index.d.ts",
+          "default": "./dist/esm/intellisense/index.js"
+        }
+      },
+      "./dist/esm/intellisense/index.js"
+    ]
+  }
+}
