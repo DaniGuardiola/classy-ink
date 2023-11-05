@@ -1,4 +1,4 @@
-import { Props, parseFragment } from "../shared.js";
+import { parseFragment,type Props } from "../shared.js";
 import { UTILITY_TRANSFORMER_MAP } from "../transformers/index.js";
 
 function transformUtility(

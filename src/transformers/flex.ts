@@ -1,20 +1,20 @@
 import {
-  UtilityTransformerMap,
-  isFragment,
-  numericTransformer,
-  parseFragment,
-} from "../shared.js";
-import {
   ALIGN_ITEMS_MAP,
   ALIGN_SELF_MAP,
   FLEX_DIRECTION_MAP,
-  JUSTIFY_CONTENT_MAP,
   isAlignItemsValue,
   isAlignSelfValue,
   isFlexDirectionValue,
   isFlexWrapValue,
   isJustifyContentValue,
+  JUSTIFY_CONTENT_MAP,
 } from "../data/index.js";
+import {
+  isFragment,
+  numericTransformer,
+  parseFragment,
+  type UtilityTransformerMap,
+} from "../shared.js";
 
 export const FLEX_TRANSFORMER_MAP: UtilityTransformerMap = {
   flex: (value) => {

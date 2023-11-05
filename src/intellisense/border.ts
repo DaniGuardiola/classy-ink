@@ -1,11 +1,11 @@
-import { kebabCaseToCamelCase } from "../shared.js";
 import {
-  SIDES_AND_CORNERS_MAP,
-  SIDES,
   BOX_STYLES,
   COLORS,
+  SIDES,
+  SIDES_AND_CORNERS_MAP,
 } from "../data/index.js";
-import { Utilities, colorHighlight, combinations } from "./shared.js";
+import { kebabCaseToCamelCase } from "../shared.js";
+import { colorHighlight, combinations,type Utilities } from "./shared.js";
 
 export const BORDER_UTILITIES: Utilities = {
   // border

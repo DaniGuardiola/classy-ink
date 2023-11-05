@@ -1,18 +1,19 @@
+import { type Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin.js";
-import { Config } from "tailwindcss";
-import {
-  DynamicUtilities,
-  DynamicUtility,
-  INVALID_UTILITY,
-  StaticUtilities,
-  StaticUtility,
-  Utilities,
-} from "./shared.js";
+
+import { type Color, isColor } from "../data/index.js";
 import { BASE_UTILITIES } from "./base.js";
-import { TEXT_UTILITIES } from "./text.js";
-import { FLEX_UTILITIES } from "./flex.js";
-import { Color, isColor } from "../data/index.js";
 import { BORDER_UTILITIES } from "./border.js";
+import { FLEX_UTILITIES } from "./flex.js";
+import {
+  type DynamicUtilities,
+  type DynamicUtility,
+  INVALID_UTILITY,
+  type StaticUtilities,
+  type StaticUtility,
+  type Utilities,
+} from "./shared.js";
+import { TEXT_UTILITIES } from "./text.js";
 
 const UTILITIES: Utilities = {
   ...BASE_UTILITIES,

@@ -1,6 +1,6 @@
+import { BOX_STYLES, COLORS } from "../../data/index.js";
 import { Box, Text } from "../../index.js"; // "tailwind-ink"
 import { DemoPageTitle } from "./DemoComponents.js";
-import { BOX_STYLES, COLORS } from "../../data/index.js";
 
 function Column1() {
   return (

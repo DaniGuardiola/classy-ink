@@ -5,7 +5,6 @@
     "target": "esnext",
     "moduleResolution": "NodeNext",
     "moduleDetection": "force",
-    "composite": true,
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,

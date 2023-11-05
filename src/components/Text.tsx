@@ -1,5 +1,6 @@
 import { Text as InkText } from "ink";
-import { ComponentPropsWithoutRef } from "react";
+import { type ComponentPropsWithoutRef } from "react";
+
 import { useTailwindInk } from "./tailwind-ink.js";
 
 export type TextProps = ComponentPropsWithoutRef<typeof InkText> & {

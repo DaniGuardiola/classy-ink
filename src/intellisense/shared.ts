@@ -1,13 +1,13 @@
 import {
-  SpatialValueOutput,
+  type Color,
   SPATIAL_VALUES,
   SPATIAL_VALUES_MAP,
-  Color,
+  type SpatialValueOutput,
 } from "../data/index.js";
 import {
-  NumericTransformerOptions,
-  Props,
   numericTransformer,
+  type NumericTransformerOptions,
+  type Props,
 } from "../shared.js";
 
 // types

@@ -1,7 +1,8 @@
-import { useTailwindInkContext } from "./context.js";
-import { Props } from "../shared.js";
-import { tailwindToInkProps } from "../index.js";
 import { useMemo } from "react";
+
+import { tailwindToInkProps } from "../index.js";
+import { type Props } from "../shared.js";
+import { useTailwindInkContext } from "./context.js";
 
 export function useTailwindInk(className?: string): Props {
   const { cache } = useTailwindInkContext();

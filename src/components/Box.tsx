@@ -1,5 +1,6 @@
-import { DOMElement, Box as InkBox } from "ink";
-import { ComponentPropsWithRef, forwardRef } from "react";
+import { Box as InkBox,type DOMElement } from "ink";
+import { type ComponentPropsWithRef, forwardRef } from "react";
+
 import { useTailwindInk } from "./tailwind-ink.js";
 
 export type BoxProps = ComponentPropsWithRef<typeof InkBox> & {

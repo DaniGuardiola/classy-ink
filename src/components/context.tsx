@@ -1,6 +1,7 @@
 import { createContext, useContext } from "react";
-import { LruCache } from "../lib/create-lru-cache.js";
-import { Props } from "../shared.js";
+
+import { type LruCache } from "../lib/create-lru-cache.js";
+import { type Props } from "../shared.js";
 
 type TailwindInkContextValue = {
   cache?: LruCache<string, Props>;

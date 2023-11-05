@@ -1,17 +1,17 @@
 import {
-  Props,
-  UtilityTransformerMap,
-  kebabCaseToCamelCase,
-  parseFragment,
-} from "../shared.js";
-import {
-  OutputSide,
-  OUTPUT_SIDES,
-  isSide,
-  SIDES_AND_CORNERS_MAP,
   isBoxStyle,
   isColor,
+  isSide,
+  OUTPUT_SIDES,
+  type OutputSide,
+  SIDES_AND_CORNERS_MAP,
 } from "../data/index.js";
+import {
+  kebabCaseToCamelCase,
+  parseFragment,
+  type Props,
+  type UtilityTransformerMap,
+} from "../shared.js";
 
 function enableBorderSide(side: OutputSide, currentProps: Props) {
   const props: Props = {};

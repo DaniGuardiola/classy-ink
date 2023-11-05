@@ -1,16 +1,16 @@
 import {
   isSizeDimention,
-  SIZE_DIMENTIONS_MAP,
   OVERFLOW_VALUES,
+  SIZE_DIMENTIONS_MAP,
 } from "../data/index.js";
-import { percentageFallback, parseFragment } from "../shared.js";
+import { parseFragment,percentageFallback } from "../shared.js";
 import {
+  combinations,
   DEFAULT_NUMERIC_AND_PERCENTAGE_VALUES,
   INVALID_UTILITY,
-  Utilities,
-  combinations,
   numericUtility,
   spatialUtilities,
+  type Utilities,
 } from "./shared.js";
 
 export const BASE_UTILITIES: Utilities = {

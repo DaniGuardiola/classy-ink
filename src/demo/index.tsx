@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 import { render, useInput } from "ink";
-import { Box, Text } from "../index.js"; // "tailwind-ink"
-import { RainboxText } from "./components/RainbowText.js";
-import { ASCII_TITLE } from "./lib/ascii-title.js";
 import { useState } from "react";
+
+import { TailwindInkProvider } from "../components/TailwindInkProvider.js";
+import { Box, Text } from "../index.js"; // "tailwind-ink"
 import { BasicDemo } from "./components/BasicDemo.js";
+import { BorderDemo } from "./components/BorderDemo.js";
 import { FlexDemo } from "./components/FlexDemo.js";
 import { FlexDemo2 } from "./components/FlexDemo2.js";
+import { RainboxText } from "./components/RainbowText.js";
 import { TextDemo } from "./components/TextDemo.js";
-import { BorderDemo } from "./components/BorderDemo.js";
+import { ASCII_TITLE } from "./lib/ascii-title.js";
 import { clsx } from "./lib/clsx.js";
-import { TailwindInkProvider } from "../components/TailwindInkProvider.js";
 
 type PageButtonProps = {
   children: string;

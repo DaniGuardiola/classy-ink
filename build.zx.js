@@ -1,6 +1,7 @@
 #!/usr/bin/env zx
-import { $ } from "zx";
 import fs from "node:fs/promises";
+
+import { $ } from "zx";
 
 const SUBPATH = "./intellisense";
 

@@ -1,10 +1,10 @@
-import { UtilityTransformerMap, kebabCaseToCamelCase } from "../shared.js";
 import {
-  TEXT_WHITESPACE_MAP,
   isColor,
   isTextTruncateValue,
   isTextWhitespaceValue,
+  TEXT_WHITESPACE_MAP,
 } from "../data/index.js";
+import { kebabCaseToCamelCase,type UtilityTransformerMap } from "../shared.js";
 
 export const TEXT_TRANSFORMER_MAP: UtilityTransformerMap = {
   // wrapping
