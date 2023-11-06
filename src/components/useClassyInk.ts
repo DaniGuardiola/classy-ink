@@ -13,5 +13,5 @@ export function useClassyInk(className?: string): Props {
     const result = compileClass(className);
     cache?.set(className, result);
     return result;
-  }, [className]);
+  }, [cache, className]);
 }
