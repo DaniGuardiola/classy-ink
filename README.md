@@ -145,6 +145,8 @@ For a history of changes, see the [changelog](CHANGELOG.md).
 
 ### <a name='IDEfeaturesoptional'></a>IDE features (optional)
 
+While Classy Ink is completely separate from Tailwind CSS, some tooling is compatible due to the similarities between the two projects. In particular, a big amount of effort was spent on Intellisense compatibility through a hand-made Tailwind CSS configuration.
+
 1. Install the [Tailwind CSS Intellisense extension](https://tailwindcss.com/docs/editor-setup#intelli-sense-for-vs-code) for Visual Studio Code or any supported IDE.
 
 2. Install `tailwindcss` in your project.
@@ -162,6 +164,8 @@ For a history of changes, see the [changelog](CHANGELOG.md).
    ```
 
 For automatic class sorting, set up the [Tailwind CSS Prettier plugin](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).
+
+> Note that the Tailwind CSS configuration is NOT used for the actual compilation or anything else. It's only used for Intellisense.
 
 ### <a name='Cacheoptional'></a>Cache (optional)
 
