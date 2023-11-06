@@ -1,5 +1,11 @@
 # classy-ink
 
+## 1.0.3
+
+### Patch Changes
+
+- 1da5e5e: Fix: remove redundant ref prop from Box props type
+
 ## 1.0.2
 
 ### Patch Changes
