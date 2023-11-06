@@ -1,3 +1,3 @@
-import { tailwindConfig } from "./dist/esm/intellisense/index.js"; // "classy-ink/intellisense"
+import { tailwindConfig } from "./dist/esm/intellisense/index.js"; // "tailwind-ink/intellisense"
 
 export default tailwindConfig;

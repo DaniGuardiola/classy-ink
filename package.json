@@ -1,7 +1,7 @@
 {
-  "name": "classy-ink",
+  "name": "tailwind-ink",
   "description": "Build beautiful CLI interfaces with utility classes and Ink",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "author": {
     "email": "hi@daniguardio.la",
     "name": "Dani Guardiola",
@@ -51,7 +51,7 @@
     }
   },
   "bin": {
-    "classy-ink": "dist/esm/demo/index.js"
+    "tailwind-ink": "dist/esm/demo/index.js"
   },
   "tshy": {
     "dialects": [

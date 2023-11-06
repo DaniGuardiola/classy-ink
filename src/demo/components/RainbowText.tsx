@@ -1,5 +1,5 @@
 import { type Color } from "../../data/colors.js";
-import { Box, Text } from "../../index.js"; // "classy-ink"
+import { Box, Text } from "../../index.js"; // "tailwind-ink"
 import { clsx } from "../lib/clsx.js";
 
 const COLORS: Color[] = ["red", "yellow", "green", "blue", "magenta"];

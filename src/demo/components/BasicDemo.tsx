@@ -1,9 +1,9 @@
-import { Box, Text } from "../../index.js"; // "classy-ink"
+import { Box, Text } from "../../index.js"; // "tailwind-ink"
 import { DemoPageTitle } from "./DemoComponents.js";
 
 function Column1() {
   return (
-    <Box class="flex-col grow gap-1">
+    <Box class="grow flex-col gap-1">
       <Box class="flex-col">
         <Text class="italic">m-1</Text>
         <Box class="border">
@@ -40,7 +40,7 @@ function Column1() {
 
 function Column2() {
   return (
-    <Box class="flex-col grow gap-1">
+    <Box class="grow flex-col gap-1">
       <Box class="flex-col">
         <Text class="italic">p-1</Text>
         <Box class="border border-red p-1">
@@ -71,7 +71,7 @@ function Column2() {
 
 function Column3() {
   return (
-    <Box class="flex-col grow gap-1">
+    <Box class="grow flex-col gap-1">
       <Box class="flex-col">
         <Text class="italic">w-10</Text>
         <Box class="border border-red w-10" />
@@ -104,9 +104,10 @@ function Column3() {
   );
 }
 
+
 export function BasicDemo() {
   return (
-    <Box class="flex-col px-1 grow gap-1">
+    <Box class="grow flex-col px-1 gap-1">
       <DemoPageTitle>Basic utilities</DemoPageTitle>
       <Box class="gap-2">
         <Column1 />

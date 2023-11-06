@@ -1,4 +1,4 @@
-import { Box, Text } from "../../index.js"; // "classy-ink"
+import { Box, Text } from "../../index.js"; // "tailwind-ink"
 import { DemoPageTitle } from "./DemoComponents.js";
 
 function repeat(n: number, fn: (i: number) => JSX.Element) {
@@ -11,7 +11,7 @@ function repeat(n: number, fn: (i: number) => JSX.Element) {
 
 function Column1() {
   return (
-    <Box class="flex-col grow gap-1">
+    <Box class="grow flex-col gap-1">
       <Box class="flex-col">
         <Text class="italic">items-start</Text>
         <Box class="border border-red items-start h-7">
@@ -58,7 +58,7 @@ function Column1() {
 
 function Column2() {
   return (
-    <Box class="flex-col grow gap-1">
+    <Box class="grow flex-col gap-1">
       <Box class="flex-col">
         <Text class="italic">justify-start</Text>
         <Box class="border border-red justify-start">
@@ -115,7 +115,7 @@ function Column2() {
 
 export function FlexDemo2() {
   return (
-    <Box class="flex-col px-1 grow gap-1">
+    <Box class="grow flex-col px-1 gap-1">
       <DemoPageTitle>Flex layout (2)</DemoPageTitle>
       <Box class="gap-2">
         <Column1 />

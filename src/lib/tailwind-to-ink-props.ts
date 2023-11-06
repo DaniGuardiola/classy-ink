@@ -1,4 +1,4 @@
-import { parseFragment, type Props } from "../shared.js";
+import { parseFragment,type Props } from "../shared.js";
 import { UTILITY_TRANSFORMER_MAP } from "../transformers/index.js";
 
 function transformUtility(
@@ -28,7 +28,7 @@ function utilityToInkProps(utility: string, currentProps: Props): Props {
   return result;
 }
 
-export function compileClass(className: string): Props {
+export function tailwindToInkProps(className: string): Props {
   const props: Props = {};
   className
     .split(" ")

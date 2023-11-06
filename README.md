@@ -1,36 +1,36 @@
 <p align="center">
-  <img alt="A screenshot of the example code below" src="https://github.com/DaniGuardiola/classy-ink/raw/main/logo.png">
+  <img alt="A screenshot of the example code below" src="https://github.com/DaniGuardiola/tailwind-ink/raw/main/logo.png">
 </p>
 
-> Build classy CLI interfaces with [Tailwind CSS](https://tailwindcss.com)-inspired utility classes and [Ink](https://term.ink/).
+> Build beautiful CLI interfaces with [Tailwind CSS](https://tailwindcss.com)-inspired utility classes and [Ink](https://term.ink/).
 
-Classy Ink is a simple drop-in replacement for the `Box` and `Text` Ink components. It adds support for utility classes through the `class` prop.
+Tailwind Ink is a simple drop-in replacement for the `Box` and `Text` Ink components. It adds support for utility classes through the `class` prop.
 
 ---
 
 Try the demo now!
 
 ```
-npx classy-ink
+npx tailwind-ink
 ```
 
-Or [try it in your browser](https://stackblitz.com/edit/classy-ink-demo?file=README&view=editor).
+Or [try it in your browser](https://stackblitz.com/edit/tailwind-ink-demo?file=README&view=editor).
 
 ## <a name='Install'></a>Install
 
 ```
-npm install classy-ink
+npm install tailwind-ink
 ```
 
 ## <a name='Example'></a>Example
 
 <p align="center">
-  <img alt="A screenshot of the example code below" src="https://github.com/DaniGuardiola/classy-ink/raw/main/example.png">
+  <img alt="A screenshot of the example code below" src="https://github.com/DaniGuardiola/tailwind-ink/raw/main/example.png">
 </p>
 
 ```tsx
 import { render } from "ink";
-import { Box, Text } from "classy-ink";
+import { Box, Text } from "tailwind-ink";
 
 function Divider() {
   return <Box class="border-gray my-1 border-t" />;
@@ -82,13 +82,13 @@ function App() {
 render(<App />);
 ```
 
-You can [run and edit this example live](https://stackblitz.com/edit/classy-ink-example?file=example.tsx&view=editor) in your browser.
+You can [run and edit this example live](https://stackblitz.com/edit/tailwind-ink-demo-jsayvk?file=example.tsx&view=editor) in your browser.
 
 ## <a name='Features'></a>Features
 
 - Full support\* for all of `Box` and `Text` style props.
 - Optimized for familiarity. Tailwind CSS users will feel right at home.
-- Compatible with [Tailwind CSS Intellisense](https://tailwindcss.com/docs/editor-setup#intelli-sense-for-vs-code) and [automatic sorting](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).
+- Support for [Tailwind CSS Intellisense](https://tailwindcss.com/docs/editor-setup#intelli-sense-for-vs-code) and [automatic sorting](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).
 - Customizable screen variants (`sm`, `md`, `lg`...) to adapt to different terminal sizes. _(coming soon)_
 - Runtime compilation, which enables dynamic values like `border-${color}`.
 - Optional cache that prevents recompilation.
@@ -128,10 +128,10 @@ For a history of changes, see the [changelog](CHANGELOG.md).
 
 ## <a name='Usage'></a>Usage
 
-1. Import `Box` and `Text` from `classy-ink` instead of `ink`.
+1. Import `Box` and `Text` from `tailwind-ink` instead of `ink`.
 
    ```tsx
-   import { Box, Text } from "classy-ink";
+   import { Box, Text } from "tailwind-ink";
    ```
 
 2. Use the `class` prop to apply styles.
@@ -145,8 +145,6 @@ For a history of changes, see the [changelog](CHANGELOG.md).
 
 ### <a name='IDEfeaturesoptional'></a>IDE features (optional)
 
-While Classy Ink is completely separate from Tailwind CSS, some tooling is compatible due to the similarities between the two projects. In particular, a big amount of effort was spent on Intellisense compatibility through a hand-made Tailwind CSS configuration.
-
 1. Install the [Tailwind CSS Intellisense extension](https://tailwindcss.com/docs/editor-setup#intelli-sense-for-vs-code) for Visual Studio Code or any supported IDE.
 
 2. Install `tailwindcss` in your project.
@@ -158,27 +156,25 @@ While Classy Ink is completely separate from Tailwind CSS, some tooling is compa
 3. Create a `tailwind.config.js` file in the project root with the following content:
 
    ```tsx
-   import { tailwindConfig } from "classy-ink/intellisense";
+   import { tailwindConfig } from "tailwind-ink/intellisense";
 
    export default tailwindConfig;
    ```
 
 For automatic class sorting, set up the [Tailwind CSS Prettier plugin](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).
 
-> Note that the Tailwind CSS configuration is NOT used for the actual compilation or anything else. It's only used for Intellisense.
-
 ### <a name='Cacheoptional'></a>Cache (optional)
 
-To use the cache, wrap your app in a `<ClassyInkProvider />`, for example:
+To use the cache, wrap your app in a `<TailwindProvider />`, for example:
 
 ```tsx
-import { ClassyInkProvider, Box } from "classy-ink";
+import { TailwindProvider, Box } from "tailwind-ink";
 
 function App() {
   return (
-    <ClassyInkProvider>
+    <TailwindProvider>
       <Box class="border p-1" />
-    </ClassyInkProvider>
+    </TailwindProvider>
   );
 }
 ```
@@ -191,7 +187,7 @@ Also, note that the cache uses a [Least Recently Used](<https://en.wikipedia.org
 
 ### <a name='Tips'></a>Tips
 
-The compilation process occurs at runtime, so you can use dynamic values in your classes. If you're used to Tailwind CSS (where this is not possible), this might be a welcome difference.
+The compilation process occurs at runtime, so you can use dynamic values in your classes (as opposed to standard Tailwind CSS).
 
 For example, the following will work:
 
@@ -201,7 +197,7 @@ For example, the following will work:
 
 ---
 
-You can still pass any style props you want, and they will take precedence over the Classy Ink classes.
+You can still pass any style props you want, and they will take precedence over the Tailwind Ink classes.
 
 For example, in the following code the final value of `flexDirection` will be `"row"` instead of `"column"`:
 
@@ -221,13 +217,13 @@ Utilities that support a numeric value (`gap`, `m`, `grow`...) also support the 
 
 ---
 
-Classy Ink is relatively lax about allowed values in comparison to Tailwind CSS. For example, `w-23/58` (equivalent to `width: 0.396551724%`) and `w-71827` will work out of the box, even though they are atypical.
+Tailwind Ink is relatively lax about allowed values in comparison to Tailwind CSS. For example, `w-23/58` (equivalent to `width: 0.396551724%`) and `w-71827` will work out of the box, even though they are atypical.
 
 Values like these are not "officially supported" though, and might stop working in a future update. If you need them, use the arbitrary value syntax (e.g. `w-[0.396551%]` or `w-[71827]`) which will always support custom values.
 
 ## <a name='Utilityclasses'></a>Utility classes
 
-All `<Box />` and `<Text />` style props are supported. Below are their equivalent Classy Ink utilities.
+All `<Box />` and `<Text />` style props are supported. Below are their equivalent Tailwind Ink utilities.
 
 ### <a name='Boxprops'></a>`Box` props
 
@@ -307,13 +303,13 @@ All colors except `gray` also have a "bright" equivalent named `<color>-bright` 
 
 ## Custom usage
 
-If you have some kind of custom use case, you can use the `compileClass` function directly. This function takes a class string and returns an object with the corresponding Ink props.
+If you have some kind of custom use case, you can use the `tailwindToInkProps` function directly. This function takes a class string and returns an object with the corresponding Ink props.
 
 ```tsx
-import { compileClass } from "classy-ink";
+import { tailwindToInkProps } from "tailwind-ink";
 import { Box } from "ink";
 
-const inkProps = compileClass("border border-red");
+const inkProps = tailwindToInkProps("border border-red");
 <Box {...inkProps} />;
 ```
 
@@ -329,6 +325,4 @@ Contributions are welcome, especially those that add missing features like the o
 
 ## <a name='Author'></a>Author
 
-Classy Ink was built by [Dani Guardiola](https://dio.la/).
-
-Classy Ink is NOT affiliated with Tailwind CSS, Tailwind Labs Inc., or the Ink project.
+Tailwind Ink was built by [Dani Guardiola](https://dio.la/).

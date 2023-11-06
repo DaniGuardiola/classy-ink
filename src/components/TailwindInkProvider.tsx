@@ -2,19 +2,19 @@ import { type ReactNode, useMemo } from "react";
 
 import { createLruCache } from "../lib/create-lru-cache.js";
 import { type Props } from "../shared.js";
-import { ClassyInkContext } from "./context.js";
+import { TailwindInkContext } from "./context.js";
 
 const DEFAULT_MAX_CACHE_SIZE = 500;
 
-export type ClassyInkProviderProps = {
+export type TailwindInkProviderProps = {
   maxCacheSize?: number;
   children: ReactNode;
 };
 
-export function ClassyInkProvider({
+export function TailwindInkProvider({
   maxCacheSize = DEFAULT_MAX_CACHE_SIZE,
   children,
-}: ClassyInkProviderProps) {
+}: TailwindInkProviderProps) {
   const cache = useMemo(
     () =>
       maxCacheSize > 0
@@ -23,8 +23,8 @@ export function ClassyInkProvider({
     [maxCacheSize],
   );
   return (
-    <ClassyInkContext.Provider value={{ cache }}>
+    <TailwindInkContext.Provider value={{ cache }}>
       {children}
-    </ClassyInkContext.Provider>
+    </TailwindInkContext.Provider>
   );
 }
