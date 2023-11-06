@@ -3,14 +3,14 @@ import { createContext, useContext } from "react";
 import { type LruCache } from "../lib/create-lru-cache.js";
 import { type Props } from "../shared.js";
 
-type TailwindInkContextValue = {
+type ClassyInkContextValue = {
   cache?: LruCache<string, Props>;
 };
 
-export const TailwindInkContext = createContext<
-  TailwindInkContextValue | undefined
+export const ClassyInkContext = createContext<
+  ClassyInkContextValue | undefined
 >(undefined);
 
-export function useTailwindInkContext(): Partial<TailwindInkContextValue> {
-  return useContext(TailwindInkContext) ?? {};
+export function useClassyInkContext(): Partial<ClassyInkContextValue> {
+  return useContext(ClassyInkContext) ?? {};
 }

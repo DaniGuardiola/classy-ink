@@ -2,8 +2,8 @@
 import { render, useInput } from "ink";
 import { useState } from "react";
 
-import { TailwindInkProvider } from "../components/TailwindInkProvider.js";
-import { Box, Text } from "../index.js"; // "tailwind-ink"
+import { ClassyInkProvider } from "../components/ClassyInkProvider.js";
+import { Box, Text } from "../index.js"; // "classy-ink"
 import { BasicDemo } from "./components/BasicDemo.js";
 import { BorderDemo } from "./components/BorderDemo.js";
 import { FlexDemo } from "./components/FlexDemo.js";
@@ -93,12 +93,12 @@ function Menu({ onDemoStart }: MenuProps) {
     }
   });
   return (
-    <TailwindInkProvider>
+    <ClassyInkProvider>
       <Box class="border-t border-b border-double border-blue">
         <MenuButton selected={selected === "START"}>Start demo</MenuButton>
         <MenuButton selected={selected === "QUIT"}>Quit</MenuButton>
       </Box>
-    </TailwindInkProvider>
+    </ClassyInkProvider>
   );
 }
 
