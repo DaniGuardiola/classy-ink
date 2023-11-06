@@ -1,9 +1,9 @@
 import { Box as InkBox, type DOMElement } from "ink";
-import { type ComponentPropsWithRef, forwardRef } from "react";
+import { type ComponentPropsWithoutRef, forwardRef } from "react";
 
 import { useClassyInk } from "./useClassyInk.js";
 
-export type BoxProps = ComponentPropsWithRef<typeof InkBox> & {
+export type BoxProps = ComponentPropsWithoutRef<typeof InkBox> & {
   class?: string;
 };
 
