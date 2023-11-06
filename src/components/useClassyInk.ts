@@ -1,16 +1,16 @@
 import { useMemo } from "react";
 
-import { tailwindToInkProps } from "../index.js";
+import { compileClass } from "../index.js";
 import { type Props } from "../shared.js";
-import { useTailwindInkContext } from "./context.js";
+import { useClassyInkContext } from "./context.js";
 
-export function useTailwindInk(className?: string): Props {
-  const { cache } = useTailwindInkContext();
+export function useClassyInk(className?: string): Props {
+  const { cache } = useClassyInkContext();
   return useMemo(() => {
     if (!className) return {};
     const cacheResult = cache?.get(className);
     if (cacheResult) return cacheResult;
-    const result = tailwindToInkProps(className);
+    const result = compileClass(className);
     cache?.set(className, result);
     return result;
   }, [className]);
