@@ -82,7 +82,7 @@ function App() {
 render(<App />);
 ```
 
-You can [run and edit this example live](https://stackblitz.com/edit/classy-ink-demo-jsayvk?file=example.tsx&view=editor) in your browser.
+You can [run and edit this example live](https://stackblitz.com/edit/classy-ink-example?file=example.tsx&view=editor) in your browser.
 
 ## <a name='Features'></a>Features
 
