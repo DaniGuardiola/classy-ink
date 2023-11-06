@@ -13,7 +13,7 @@ async function tweakPackageJson() {
   const jsPath = exportContent.import.default;
   packageJson.exports[SUBPATH] = [exportContent, jsPath];
   fs.writeFile(path, JSON.stringify(packageJson));
-  await $`prettier --write ${path}`;
+  await $`bunx prettier --write ${path}`;
 }
 
 async function build() {
