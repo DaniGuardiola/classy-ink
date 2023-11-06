@@ -1,10 +1,10 @@
 import { BOX_STYLES, COLORS } from "../../data/index.js";
-import { Box, Text } from "../../index.js"; // "tailwind-ink"
+import { Box, Text } from "../../index.js"; // "classy-ink"
 import { DemoPageTitle } from "./DemoComponents.js";
 
 function Column1() {
   return (
-    <Box class="grow flex-col">
+    <Box class="flex-col grow">
       <Text class="italic">{`border-<side>`}</Text>
       <Box class="flex-col gap-1">
         <Box class="flex-col">
@@ -68,7 +68,7 @@ function Column1() {
 
 function Column2() {
   return (
-    <Box class="grow flex-col">
+    <Box class="flex-col grow">
       <Text class="italic">{`border-<color>`}</Text>
       <Box class="flex-col">
         {COLORS.map((color) => (
@@ -83,7 +83,7 @@ function Column2() {
 
 function Column3() {
   return (
-    <Box class="grow flex-col">
+    <Box class="flex-col grow">
       <Text class="italic">border-dim</Text>
       <Box class="flex-col">
         {COLORS.map((color) => (
@@ -98,7 +98,7 @@ function Column3() {
 
 export function BorderDemo() {
   return (
-    <Box class="grow flex-col px-1 gap-1">
+    <Box class="flex-col px-1 grow gap-1">
       <DemoPageTitle>Border utilities</DemoPageTitle>
       <Box class="gap-2">
         <Column1 />

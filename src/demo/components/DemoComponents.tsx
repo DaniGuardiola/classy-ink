@@ -1,4 +1,4 @@
-import { Box, Text } from "../../index.js"; // "tailwind-ink"
+import { Box, Text } from "../../index.js"; // "classy-ink"
 
 export function DemoPageTitle({ children }: { children: string }) {
   return (

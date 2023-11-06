@@ -1,5 +1,5 @@
 import { COLORS } from "../../data/colors.js";
-import { Box, Text } from "../../index.js"; // "tailwind-ink"
+import { Box, Text } from "../../index.js"; // "classy-ink"
 import { DemoPageTitle } from "./DemoComponents.js";
 
 const LOREM_IPSUM =
@@ -7,7 +7,7 @@ const LOREM_IPSUM =
 
 function Column1() {
   return (
-    <Box class="grow flex-col w-40 gap-1">
+    <Box class="flex-col w-40 grow gap-1">
       <Box class="flex-col">
         <Text class="italic">whitespace-wrap</Text>
         <Box class="border flex-row">
@@ -93,7 +93,7 @@ function Column5() {
 
 export function TextDemo() {
   return (
-    <Box class="grow flex-col px-1 gap-1">
+    <Box class="flex-col px-1 grow gap-1">
       <DemoPageTitle>Text utilities</DemoPageTitle>
       <Box class="gap-2">
         <Column1 />

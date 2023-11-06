@@ -1,4 +1,4 @@
-# tailwind-ink
+# classy-ink
 
 ## 1.0.1
 
