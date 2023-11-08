@@ -1,7 +1,7 @@
 import { Text as InkText } from "ink";
 import { type ComponentPropsWithoutRef } from "react";
 
-import { useClassyInk } from "./useClassyInk.js";
+import { useClassyInk } from "../lib/useClassyInk.js";
 
 export type TextProps = ComponentPropsWithoutRef<typeof InkText> & {
   class?: string;

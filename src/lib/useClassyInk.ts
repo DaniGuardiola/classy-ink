@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 
+import { useClassyInkContext } from "../components/context.js";
 import { compileClass } from "../index.js";
 import { type Props } from "../shared.js";
-import { useClassyInkContext } from "./context.js";
 
 export function useClassyInk(className?: string): Props {
   const { cache } = useClassyInkContext();
