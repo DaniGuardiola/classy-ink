@@ -307,17 +307,26 @@ All colors except `gray` also have a "bright" equivalent named `<color>-bright` 
 
 ## Custom usage
 
-If you have some kind of custom use case, you can use the `compileClass` function directly. This function takes a class string and returns an object with the corresponding Ink props.
+If you have some kind of custom use case, you can use the `useClassyInk` hook or the `compileClass` function directly.
+
+Both take a class string and return an object with the corresponding Ink props. The hook wraps the function and adds memoization and caching logic on top.
+
+Unless there's a good reason to do otherwise, the hook is recommended over the function.
 
 ```tsx
+// note: incomplete example for illustration purposes
 import { compileClass } from "classy-ink";
 import { Box } from "ink";
+
+function MyCustomBox({ class: className, ...props }) {
+  return <Box {...useClassyInk(className)} {...props} />;
+}
+
+// or
 
 const inkProps = compileClass("border border-red");
 <Box {...inkProps} />;
 ```
-
-Note that this function does not have some optimizations that are built-in to the `Box` and `Text` components, like memoization and (optional) global cache. Use at your own risk.
 
 ## <a name='Contributing'></a>Contributing
 
