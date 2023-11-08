@@ -1,5 +1,15 @@
 # classy-ink
 
+## 1.1.0
+
+### Minor Changes
+
+- 614b8c1: Make the useClassyInk hook public for advanced use cases
+
+### Patch Changes
+
+- 5b91ae2: Fix: gitignore changed tshy path
+
 ## 1.0.3
 
 ### Patch Changes
