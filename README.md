@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="A screenshot of the example code below" src="https://github.com/DaniGuardiola/classy-ink/raw/main/logo.png">
+  <img alt="The Classy Ink logo" src="https://github.com/DaniGuardiola/classy-ink/raw/main/logo.png">
 </p>
 
 > Build classy CLI interfaces with [Tailwind CSS](https://tailwindcss.com)-inspired utility classes and [Ink](https://term.ink/).
