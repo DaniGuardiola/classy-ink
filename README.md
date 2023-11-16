@@ -33,13 +33,13 @@ import { render } from "ink";
 import { Box, Text } from "classy-ink";
 
 function Divider() {
-  return <Box class="border-gray my-1 border-t" />;
+  return <Box class="border-t border-gray my-1" />;
 }
 
 function Button({ label }: { label: string }) {
   return (
     <Box class="border-round bg-blue px-1">
-      <Text class="font-bold text-white">{label}</Text>
+      <Text class="text-white font-bold">{label}</Text>
     </Box>
   );
 }
@@ -48,7 +48,7 @@ function InputField({ label }: { label: string }) {
   return (
     <Box class="items-center">
       <Text class="mr-2">{label}:</Text>
-      <Box class="border-round border-cyan border px-2">
+      <Box class="border border-round border-cyan px-2">
         <Text class="text-cyan">_____________</Text>
       </Box>
     </Box>
@@ -57,7 +57,7 @@ function InputField({ label }: { label: string }) {
 
 function App() {
   return (
-    <Box class="border-round border-green flex-col border px-2 py-1">
+    <Box class="border border-round border-green flex-col px-2 py-1">
       <Box class="justify-between">
         <Text class="text-magenta font-bold">The Matrix CLI</Text>
         <Text class="text-gray">(Ctrl+C to quit)</Text>
@@ -137,9 +137,9 @@ For a history of changes, see the [changelog](CHANGELOG.md).
 2. Use the `class` prop to apply styles.
 
    ```tsx
-   <Box class="min-w-1/2 flex-wrap gap-2 border px-3 py-1">
+   <Box class="min-w-1/2 border flex-wrap px-3 py-1 gap-2">
      <Text class="text-red">Hello</Text>
-     <Text class="bg-blue font-bold text-white">World!</Text>
+     <Text class="text-white bg-blue font-bold">World!</Text>
    </Box>
    ```
 
