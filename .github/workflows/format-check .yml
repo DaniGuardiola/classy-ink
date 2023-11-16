@@ -13,5 +13,6 @@ jobs:
         with:
           node-version: 16.x
       - run: bun install --frozen-lockfile --ignore-scripts
+      - run: bun prepare
       - name: Check format
         run: bunx prettier . --check
