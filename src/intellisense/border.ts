@@ -5,7 +5,7 @@ import {
   SIDES_AND_CORNERS_MAP,
 } from "../data/index.js";
 import { kebabCaseToCamelCase } from "../shared.js";
-import { colorHighlight, combinations,type Utilities } from "./shared.js";
+import { colorHighlight, combinations, type Utilities } from "./shared.js";
 
 export const BORDER_UTILITIES: Utilities = {
   // border

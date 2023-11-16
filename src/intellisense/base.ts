@@ -3,7 +3,7 @@ import {
   OVERFLOW_VALUES,
   SIZE_DIMENTIONS_MAP,
 } from "../data/index.js";
-import { parseFragment,percentageFallback } from "../shared.js";
+import { parseFragment, percentageFallback } from "../shared.js";
 import {
   combinations,
   DEFAULT_NUMERIC_AND_PERCENTAGE_VALUES,
